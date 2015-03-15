@@ -54,4 +54,3 @@ gem 'hiredis'
 gem 'redis-rails' # Will install several other redis-* gems
 gem 'resque'
 gem 'puma'
-gem 'bower-rails'

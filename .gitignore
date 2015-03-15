@@ -11,8 +11,9 @@
 /log/*
 !/log/.keep
 /tmp
-/vendor/assets/bower_components
-**~
-public/assets/
+public/
 bin/
-*#*
+
+# Archivos temporales de emacs y vim
+**#*
+**~
