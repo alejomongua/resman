@@ -22,10 +22,13 @@ module Resman
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-    config.assets.paths << Rails.root.join("ngapp","app")
 
     # config.assets.precompile << %r(.*.(?:eot|svg|ttf|woff)$)
     
-    config.generators.javascript_engine :js
+    config.generators do |g|
+      g.template_engine false
+      g.stylesheets     false
+      g.javascripts     false
+    end
   end
 end
